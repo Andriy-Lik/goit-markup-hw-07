@@ -1,0 +1,36 @@
+.clients-list {
+    display: flex;
+}
+
+.clients-list .item + .item {
+    margin-left: 30px;
+}
+
+.clients-item {
+    display: block;
+    width: 170px;
+    height: 92px;    
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: $icon-color;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+}
+
+.clients-icon {
+    fill: currentColor;
+}
