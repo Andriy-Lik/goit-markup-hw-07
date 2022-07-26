@@ -2,36 +2,29 @@
     padding-top: 0;
 }
 
-.work-title,
-.team-title,
-.clients-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+.work__title,
+.team__title,
+.clients__title {
+    @extend %title;
 }
 
-.work-list {
+.work__list {
     display: flex;
 }
 
-.work-list .item + .item {
+.work__item + .work__item {
     margin-left: 30px;
 }
 
-.work-item {
+.work__item {
     position: relative;
 }
 
-.work-img {    
+.work__img {    
     display: block;
 }
 
-.work-label {
+.work__label {
     position: absolute;
     bottom: 0;
 

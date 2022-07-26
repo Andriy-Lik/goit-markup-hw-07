@@ -2,72 +2,74 @@
     background-color: $team-bgc;
 }
 
-.team-list {
+.team__list {
     display: flex;
 }
 
-.team-list .item + .item {
+.team__list-item + .team__list-item {
     margin-left: 30px;
 }
 
-.team-list-item {
+.team__list-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-pic {
+.team__pic {
     display: block;
 }
 
-.team-blok {
+.team__blok {
     padding-top: 30px;
     padding-bottom: 30px;    
     background-color: $main-color;
 }
 
 
-.team-name {
+.team__name {
     margin-top: 0;
     margin-bottom: 10px;
 
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.team-career {
-    margin-top: 0;
-    margin-bottom: 16px;
-
-    color: $second-color;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
-.team-social-blok {
+.team__career {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    color: $second-color;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-social {
     padding-left: 32px;
     padding-right: 32px;
 }
 
-.team-social-list {
+.team-social__list {
     display: flex;    
 }
 
-.team-social-list .item {
+.team-social__item {
     margin-bottom: 0;
     height: 44px;
     width: 44px;
 }
 
-.team-social-list .item + .item {
+.team-social__item + .team-social__item {
     margin-left: 10px;   
 }
 
-.team-social-link {
+.team-social__link {
     display: flex;
     height: 100%;
     width: 100%;
@@ -77,15 +79,14 @@
     border-radius: 50%;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {    
+        background-color: $accent-color;
+        color: $main-color;
+    }
 }
 
-.team-social-link:hover,
-.team-social-link:focus {    
-    background-color: $accent-color;
-    color: $main-color;
-}
-
-.team-social-icon { 
-    fill: currentColor;
-    
+.team-social__icon { 
+    fill: currentColor;    
 }
